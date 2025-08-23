@@ -10,10 +10,10 @@
 ---
 # Direcciones MAC (OUI y NIC) -> Dirección "FISICA"
 - Dirección MAC es un identificador unico otorgada por el fabricante
-- Consta de 48 bits
+- Consta de 48 bits o 6 bytes => 1 bytes = 8 bits
 
 ## 00:0c:29:e1:6c:92
 - 00:0c:29 = __OUI__ => Ayuda a entender a que maquina se esta enfrentando, la Marca, Modelo, etc...
-- e1:6c:92 = __NIC__
+- e1:6c:92 = __NIC__ => El NIC de una dirección MAC es en realidad la Tarjeta de Interfaz de Red
 
 > De todas formas tambien se puede modificar \[!\] 

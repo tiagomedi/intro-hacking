@@ -90,3 +90,7 @@ Por ejemplo, la dirección IP 192.168.1.1 con una máscara de red de 255.255.255
 | /30  | 4           | 252                       |
 | /31  | 2           | 254                       |
 | /32  | 1           | 255                       |
+
+---
+
+# TIPS de subnetting y cálculo veloz de direccionamiento en redes
