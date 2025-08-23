@@ -22,11 +22,18 @@ Se sincronizan los números de secuencia y de reconocimiento de los paquetes ent
 - 21: FTP (File Transfer Protocol) – permite la transferencia de archivos entre sistemas.
 - 22: SSH (Secure Shell) – un protocolo de red seguro que permite a los usuarios conectarse y administrar sistemas de forma remota.
 - 23: Telnet – un protocolo utilizado para la conexión remota a dispositivos de red.
+- 25: SMTP (Simple Mail Transfer Protocol) - protocolo utilizado en el envio y recepción de mensajeria  de correos electronicos.
 - 80: HTTP (Hypertext Transfer Protocol) – el protocolo que se utiliza para la transferencia de datos en la World Wide Web.
 - 443: HTTPS (Hypertext Transfer Protocol Secure) – la versión segura de HTTP, que utiliza encriptación SSL/TLS para proteger las comunicaciones web.
 
+- 139/445: SMB (Server Message Block) - Es un protocolo de red cliente-servidor que permite compartir archivos, impresoras y otros recursos en una red, siendo una solución de comunicación y acceso a recursos muy popular en entornos de Microsoft Windows, aunque también compatible con sistemas operativos Linux (a través de Samba) y macOS.
+
+- 110: POP3 (Post Office Protocol 3) -  Es un estándar de internet que descarga mensajes de correo electrónico de un servidor a un dispositivo local, eliminándolos del servidor por defecto para el acceso offline y la conservación del espacio en el servidor.
+
+- 143: IMAP (Protocolo de Acceso a Mensajes de Internet) - es un protocolo que permite a los clientes de correo electrónico acceder y administrar mensajes de correo electrónico almacenados en un servidor remoto, sincronizando todos los dispositivos del usuario y manteniendo los mensajes en el servidor hasta que se eliminen manualmente. A diferencia del protocolo POP, IMAP ofrece una experiencia de correo electrónico basada en la nube, con carpetas y correos que se organizan y se reflejan en todos los dispositivos conectados a la cuenta. 
+
 ---
-## UDP
+## UDP - No abunda tanto...
 Es un protocolo no orientado a conexión el cual __no garantiza la entrega de datos__.
 
 ### Puertos UDP comunes:
