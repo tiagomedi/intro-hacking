@@ -9,7 +9,7 @@ Cada capa proporciona __servicios y funciones específicas__, que permiten a los
 
 3. Capa de __red__: La capa de red se ocupa del enrutamiento de paquetes de datos a través de múltiples redes. Esta capa utiliza direcciones lógicas, como direcciones IP, para identificar dispositivos y rutas de red. [!] Aqui estan las IP de Origen y Destino 
 
-4. Capa de __transporte__: La capa de transporte se encarga de la entrega confiable de datos entre dispositivos finales, proporcionando servicios como el control de flujo y la corrección de errores. TCP y UDP
+4. Capa de __transporte__: La capa de transporte se encarga de la entrega confiable de datos entre dispositivos finales, proporcionando servicios como el con trol de flujo y la corrección de errores. TCP y UDP
 
 5. Capa de __sesión__: Esta capa se encarga de establecer y mantener las sesiones de comunicación entre dispositivos. También proporciona servicios de gestión de sesiones, como la autenticación y la autorización. 
 
@@ -28,3 +28,65 @@ Ahora bien, cuando hablamos de __CIDR (acrónimo de Classless Inter-Domain Routi
 Por ejemplo, la dirección IP 192.168.1.1 con una máscara de red de 255.255.255.0 se escribiría como 192.168.1.1 __/24__.
 
 -> https://www.ipaddressguide.com/cidr 
+
+---
+
+# Tabla de Subnets y Hosts
+
+## Subnet: x.0.0.0
+
+| CIDR | Total Hosts   |
+|------|---------------|
+| /1   | 2147483648    |
+| /2   | 1073741824    |
+| /3   | 536870912     |
+| /4   | 268435456     |
+| /5   | 134217728     |
+| /6   | 67108864      |
+| /7   | 33554432      |
+| /8   | 16777216      |
+
+---
+
+## Clase A - Subnet: 255.x.0.0
+
+| CIDR | Total Hosts |
+|------|-------------|
+| /9   | 8388608     |
+| /10  | 4194304     |
+| /11  | 2097152     |
+| /12  | 1048576     |
+| /13  | 524288      |
+| /14  | 262144      |
+| /15  | 131072      |
+| /16  | 65536       |
+
+---
+
+## Clase B - Subnet: 255.255.x.0
+
+| CIDR | Total Hosts |
+|------|-------------|
+| /17  | 32768       |
+| /18  | 16384       |
+| /19  | 8192        |
+| /20  | 4096        |
+| /21  | 2048        |
+| /22  | 1024        |
+| /23  | 512         |
+| /24  | 256         |
+
+---
+
+## Clase C - Subnet: 255.255.255.x
+
+| CIDR | Total Hosts | Subnet Mask (Sustituir X) |
+|------|-------------|---------------------------|
+| /25  | 128         | 128                       |
+| /26  | 64          | 192                       |
+| /27  | 32          | 224                       |
+| /28  | 16          | 240                       |
+| /29  | 8           | 248                       |
+| /30  | 4           | 252                       |
+| /31  | 2           | 254                       |
+| /32  | 1           | 255                       |
