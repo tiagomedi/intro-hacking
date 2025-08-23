@@ -1,8 +1,8 @@
-# Introduction to Hacking 101
+# [!] Introduction to Hacking 101
 This is a repository of my notes and lessons learned from Introduction to Hacking at Hack4u Academy.
 > It never hurts to review the initial steps ✨
 
-## Course Content [!]
+## [!] Course Content 
 1. [Conceptos Básicos](./Conceptos_Basicos/)
 2. [Reconocimiento]()
 3. [Configuración laboratorios locales -> Docker]()
