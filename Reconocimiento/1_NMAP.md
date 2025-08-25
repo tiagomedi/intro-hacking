@@ -15,6 +15,8 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 ---
 
+_man nmp_ => para visualizar el manual de NMAP.
+
 __-p__ : Para escanear puertos abiertos.
 
 _#nmap -p- 172.16.222.135_ => Esto engloba todo el rango entero de puertos.
