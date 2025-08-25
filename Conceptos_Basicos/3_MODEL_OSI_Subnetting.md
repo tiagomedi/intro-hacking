@@ -94,3 +94,30 @@ Por ejemplo, la dirección IP 192.168.1.1 con una máscara de red de 255.255.255
 ---
 
 # TIPS de subnetting y cálculo veloz de direccionamiento en redes
+
+## [!] Forma Aritmetica
+172.14.15.16/17
+
+- Binario : echo "obase=2;172" | bc -> 10101100 ...
+
+10101100.00001110.00001111.00010000
+- _Primeros 17 bits_ corresponden a la parte de __RED__ (por la /17)
+- y los _15 bits restantes_ corresponderian a la parte de __HOST__ (17+15 = 32 bits, CORRECT!)
+
+---
+
+1.  Netmask -> (255.255.128.0) = 17
+Rellenar de 1 los primeros 17 bits [/17]
+11111111.11111111.10000000.00000000 => esto es la mascara de RED __(255.255.128.0)__
+echo "ibase=2;11111111" | bc => 255
+
+2. Network ID -> (172.14.0.0)
+10101100.00001110.00001111.00010000 (172.14.15.16)
+11111111.11111111.10000000.00000000 (255.255.128.0)
+----------------------------------- => [AND]
+10101100.00001110.00000000.00000000 __(172.14.0.0)__
+
+3. Broadcast Address -> (172.14.117.255)
+10101100.00001110.00000000.00000000 (172.14.0.0)
+10101100.00001110.01111111.11111111 __(172.14.117.255)__ -> 15 bits correspondiente al HOST = _Broadcast Address_
+
