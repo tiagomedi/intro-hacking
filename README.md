@@ -4,7 +4,7 @@ This is a repository of my notes and lessons learned from Introduction to Hackin
 
 ## [!] Course Content 
 1. [Conceptos Básicos](./Conceptos_Basicos/)
-2. [Reconocimiento]()
+2. [Reconocimiento](./Reconocimiento/)
 3. [Configuración laboratorios locales -> Docker]()
 4. [Enumeración servicios comunes y gestores de contenido]()
 5. [OWASP TOP 10 y vulnerabilidades web]()
