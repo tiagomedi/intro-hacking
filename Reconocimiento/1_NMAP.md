@@ -30,11 +30,12 @@ _#nmap -p- --open 172.16.222.135 -v_ => __Con -v veras todo lo que esta sucedien
 _#nmap -p- --open 172.16.222.135 -v -n_ => __Con -n Iniciaras con Scaneo DNS para que sea mas RAPIDO!__
 
 _#nmap -p- -T5 --open 172.16.222.135 -v -n_ => __Con -T fija una plantilla de Tiempo para el renderizado para ir mas lento o mas rapido!__
-    T0 = paranoico -> MAS LENTO
-    T1 = sigiloso
-    T2 = amable
-    T3 = normal
-    T4 = agresivo
-    T5 = loco -> MAS RAPIDO
+
+- T0 = paranoico -> MAS LENTO;
+- T1 = sigiloso;
+- T2 = amable;
+- T3 = normal;
+- T4 = agresivo;
+- T5 = loco -> MAS RAPIDO;
 
 _#nmap -p- -T5 -sT --open 172.16.222.135 -v -n_ => __-sT lanza un SYN de forma que si un port esta close contesta con RST. Open contesta con SYN/ACK, para posteriormente a nuestro lado contestar con un ACK__
