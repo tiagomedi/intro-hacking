@@ -40,4 +40,21 @@ _#nmap -p- -T5 --open 172.16.222.135 -v -n_ => __Con -T fija una plantilla de Ti
 - T4 = agresivo;
 - T5 = loco -> MAS RAPIDO;
 
-_#nmap -p- -T5 -sT --open 172.16.222.135 -v -n_ => __-sT lanza un SYN de forma que si un port esta close contesta con RST. Open contesta con SYN/ACK, para posteriormente a nuestro lado contestar con un ACK__
+_#nmap -p- -T5 -sT --open 172.16.222.135 -v -n_ => __-sT lanza un SYN de forma que si un port esta close contesta con RST. Open contesta con SYN/ACK, para posteriormente a nuestro lado contestar con un ACK__ ya que __-sT : sondeo TCP__
+
+_#nmap  --top-ports 500 --open -sU --open 172.16.222.135 -v -n -Pn_ => __El parametro -Pn : para q de por hecho que el host esta vivo. Para no que no coloque el descubrimiento de Host!__ y __-sU : sondeo de UDP protocol__ y el escaneo va mucho mas lento
+
+---
+
+tcpdump -i ens160 -w Captura.cap -v
+=> Se guarda el archivo!
+
+wireshark Captura.cap &>/dev/null & disown
+
+---
+
+nmap -sn 172.16.222.0/24
+
+---
+
+nmap -O 172.16.222.135
