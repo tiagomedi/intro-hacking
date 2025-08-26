@@ -63,4 +63,4 @@ Nmap done: 1 IP address (1 host up) scanned in 3.77 seconds
 
 ---
 
-__xxd__ => Revertir HEXADECIMAL para transformarlo a DECIMAL
+__xxd -ps -r__ => Revertir HEXADECIMAL para transformarlo a DECIMAL
