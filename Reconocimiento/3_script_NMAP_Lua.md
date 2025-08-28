@@ -64,3 +64,17 @@ Nmap done: 1 IP address (1 host up) scanned in 3.77 seconds
 ---
 
 __xxd -ps -r__ => Revertir HEXADECIMAL para transformarlo a DECIMAL
+
+---
+
+# Creación scripts en Lua para nmap
+Los campos más comunes que se definen en la tabla de un script de Lua en Nmap incluyen:
+
+- description: Este campo se utiliza para proporcionar una descripción corta del script y su funcionalidad.
+- categories: Este campo se utiliza para especificar las categorías a las que pertenece el script, como descubrimiento, explotación, enumeración, etc.
+- author: Este campo se utiliza para identificar al autor del script.
+- license: Este campo se utiliza para especificar los términos de la licencia bajo la cual se distribuye el script.
+- dependencies: Este campo se utiliza para especificar cualquier dependencia de biblioteca o software que requiera el script para funcionar correctamente.
+- actions: Este campo se utiliza para definir la funcionalidad específica del script, como la realización de un escaneo de puertos, la detección de vulnerabilidades, etc.
+
+Una vez que se ha creado un script de Lua personalizado en Nmap, se puede invocar utilizando el parámetro –script y el nombre del archivo del script. Con la creación de scripts personalizados en Lua, es posible personalizar aún más las capacidades de Nmap y obtener información valiosa sobre los sistemas y servicios en la red.
