@@ -78,3 +78,6 @@ Los campos más comunes que se definen en la tabla de un script de Lua en Nmap i
 - actions: Este campo se utiliza para definir la funcionalidad específica del script, como la realización de un escaneo de puertos, la detección de vulnerabilidades, etc.
 
 Una vez que se ha creado un script de Lua personalizado en Nmap, se puede invocar utilizando el parámetro –script y el nombre del archivo del script. Con la creación de scripts personalizados en Lua, es posible personalizar aún más las capacidades de Nmap y obtener información valiosa sobre los sistemas y servicios en la red.
+
+# Alternativas a la enumeraicón de puertos usando descriptores de archivos
+
