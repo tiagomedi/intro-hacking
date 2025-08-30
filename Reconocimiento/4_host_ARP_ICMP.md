@@ -52,4 +52,30 @@ En ocaciones se descubren mas equipos.
 
 ---
 
-Otra forma como Script como en el archivo ["_hostDiscovery.sh1_"](hostDiscovery.sh)
+Otra forma como Script como en el archivo ["_hostDiscovery.sh_"](hostDiscovery.sh)
+
+---
+# masscan   
+usage:
+
+masscan -p80,8000-8100 10.0.0.0/8 --rate=10000
+
+ scan some web ports on 10.x.x.x at 10kpps
+
+masscan --nmap
+
+ list those options that are compatible with nmap
+
+masscan -p80 10.0.0.0/8 --banners -oB <filename>
+
+ save results of scan in binary format to <filename>
+
+masscan --open --banners --readscan <filename> -oX <savefile>
+
+ read binary scan results in <filename> and save them as xml in <savefile>
+
+---
+
+Nmap puede escanearte 1.000 hosts/min
+## En cambio masscan puede llegar a escanear VARIOS MILLONES de host/min [!]
+Es capaz en un __simple paquete__ descubrir todos los __puertos abiertos__ que pueda tener un __UNICO host__
