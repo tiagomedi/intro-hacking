@@ -9,7 +9,7 @@
 # Enumeración de subdominios
 - Phonebook (Herramienta pasiva): https://phonebook.cz/
 - Intelx (Herramienta pasiva): https://intelx.io/
-- CTFR (Herramienta pasiva): https://github.com/UnaPibaGeek/ctfr
+- CTFR (Herramienta pasiva): git clone https://github.com/UnaPibaGeek/ctfr
     - source venv/bin/activate
     - python3 ctfr.py 
     - deactivate    
