@@ -38,3 +38,5 @@ Wfuzz y Gobuster para aplicar Fuzzing. Esta tecnica se utiliza para __descubrir 
 - ffuf -c -t 200 -w /usr/share/SecLists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt -u https://www.miwifi.com/FUZZ/ --mc=200 -> Solo filtra codigo de estado 200
 ---
 # Burpsuite
+- burpsuite &> /dev/null & diswn
+    - Proxy Foxy configurar el proxy una extensión para que pasen todas las peticiones [!]
