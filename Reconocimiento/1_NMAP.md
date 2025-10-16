@@ -58,3 +58,13 @@ nmap -sn 172.16.222.0/24
 ---
 
 nmap -O 172.16.222.135
+---
+Esta técnica utiliza paquetes ICMP para determinar la disponibilidad de hosts y puede ser útil en situaciones donde el tráfico de TCP o UDP es bloqueado o filtrado.
+---
+vhost -> Esta opción es utilizada para realizar un ataque de fuerza bruta contra el servidor web, buscando subdominios o virtual hosts.
+---
+La __enumeración de puertos mediante descriptores de archivo__ /dev/tcp es una técnica alternativa de escaneo de puertos que manipula descriptores de archivo en sistemas operativos tipo Unix para acceder a puertos remotos y determinar si están abiertos o cerrados.
+---
+Esta técnica envía paquetes TCP ACK a los puertos que se están investigando y analiza las respuestas para determinar si los puertos están abiertos, cerrados o filtrados por un firewall.
+---
+¿Qué cabecera debo usar con Wfuzz si deseo enumerar subdominios mediante un ataque de fuerza bruta sobre un dominio dado? -> Host

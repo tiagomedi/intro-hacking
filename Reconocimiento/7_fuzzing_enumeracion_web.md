@@ -31,6 +31,14 @@ Wfuzz y Gobuster para aplicar Fuzzing. Esta tecnica se utiliza para __descubrir 
 - wfuzz -c -t 200 -z range,1-20000 'https://www.mi.com/shop/buy/detail?product_id=FUZZ'
     - wfuzz -c --hw=6515 -t 200 -z range,1-20000 'https://www.mi.com/shop/buy/detail?product_id=FUZZ'
 
+- --hc: Ocultar código de estado (Hide status code)
+- --sl: Mostrar nº de líneas (Show number of lines)
+- --sh: Mostrar nº de caracteres (Show number of characters)
+- --hh: Ocultar nº de caracteres (Hide number of characters)
+- --sc: Mostrar código de estado (Show status code)
+- --hw: Ocultar nº de palabras (Hide number of words)
+- -X : realizar una petición con un método HTTP personalizado, como PUT o DELETE
+
 ## Ffuf
 [!] Desarrollada en GO, mejor para Sockets [!]
 - ffuf -c -t 200 -w /usr/share/SecLists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt -u https://miwifi.com/FUZZ -> T son los Hilos
