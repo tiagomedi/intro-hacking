@@ -1,5 +1,7 @@
 # [!] Introduction to Hacking 101
 This is a repository of my notes and lessons learned from Introduction to Hacking at Hack4u Academy.
+
+> [!NOTE]  
 > It never hurts to review the initial steps ✨
 
 ## [!] Course Content 
