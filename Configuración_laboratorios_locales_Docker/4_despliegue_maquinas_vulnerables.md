@@ -1,5 +1,4 @@
-
-# Despliegue de máquinas vulnerables con Docker-Compose (1/2)
+# Despliegue de máquinas vulnerables con Docker-Compose (1 y 2)
 
 AVISO: En caso de que veáis que no estáis pudiendo instalar ‘nano‘ o alguna utilidad en el contenedor, eliminad todo el contenido del archivo ‘/etc/apt/sources.list‘ existente en el CONTENEDOR y metedle esta línea:
 
@@ -10,15 +9,19 @@ Si estáis enfrentando dificultades con el contenedor de Elasticsearch y notáis
 
 __sudo sysctl -w vm.max_map_count=262144__.
 Después de hacerlo, intentad de nuevo ejecutar ‘__docker-compose up -d__‘, se debería solucionar el problema.
+
 ---
+
 A continuación, os proporcionamos el enlace al proyecto de Github que estamos usando para esta clase:
 
 Vulhub: https://github.com/vulhub/vulhub
 Asimismo, por aquí os compartimos el enlace al recurso donde se nos ofrece el script en Javascript encargado de establecer la Reverse Shell:
 
 NodeJS Reverse Shell: https://github.com/appsecco/vulnerable-apps/tree/master/node-reverse-shell
+
 ---
 1. __svn checkout https://github.com/vulhub/vulhub/trunk/kibana/CVE-2018-17246__
     - https://github.com/vulhub/vulhub/tree/master/kibana/CVE-2018-17246
     - Se cambio /tree/master/ por /trunk/
     - La carpeta de esta maquina esta en [Maquinas Vulnerables/kibana-CVE-2018-17246](./Maquinas%20Vulnerables/kibana-CVE-2018-17246/)
+
