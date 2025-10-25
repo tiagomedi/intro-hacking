@@ -1,5 +1,8 @@
 FROM ubuntu:latest
 
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+# QUE HACE CMD?: Establece el comando predeterminado en primer plano cuando se inicie el contenedor.
+
 ENV DEBIAN_FRONTEND noninteractive
 # Usa la imagen base de Ubuntu y establece el modo no interactivo para las instalaciones
 
