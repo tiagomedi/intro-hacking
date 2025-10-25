@@ -7,8 +7,8 @@ This is a repository of my notes and lessons learned from Introduction to Hackin
 ## [!] Course Content 
 1. [Conceptos Básicos](./Conceptos_Basicos/)
 2. [Reconocimiento](./Reconocimiento/)
-3. [Configuración laboratorios locales -> Docker](./Configuración_laboratorios_locales_Docker)
-4. [Enumeración servicios comunes y gestores de contenido]()
+3. [Configuración laboratorios locales -> Docker](./Configuración%20laboratorios%20locales%20->%20Docker/)
+4. [Enumeración servicios comunes y gestores de contenido](./Enumeración%20servicios%20comunes%20y%20gestores%20de%20contenido/)
 5. [OWASP TOP 10 y vulnerabilidades web]()
 6. [Técnicas de escalada de privilegios]()
 7. [Buffer Overflow]()

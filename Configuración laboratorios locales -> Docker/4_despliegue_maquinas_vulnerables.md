@@ -25,3 +25,6 @@ NodeJS Reverse Shell: https://github.com/appsecco/vulnerable-apps/tree/master/no
     - Se cambio /tree/master/ por /trunk/
     - La carpeta de esta maquina esta en [Maquinas Vulnerables/kibana-CVE-2018-17246](./Maquinas%20Vulnerables/kibana-CVE-2018-17246/)
 
+2. A continuación, os compartimos el enlace del proyecto correspondiente a la vulnerabilidad de ImageMagick (ImageTragick) que tocamos en esta clase:
+    - Proyecto de Github: https://github.com/vulhub/vulhub/tree/master/imagemagick/imagetragick
+    - __pushd__ -> __popd__ hace que te devuelvas mas rapido que un __cd__
