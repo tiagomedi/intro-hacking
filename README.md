@@ -1,4 +1,4 @@
-# [!] Introduction to Hacking 101
+# [!] Introduction to Hacking 101 - HACK4U
 This is a repository of my notes and lessons learned from Introduction to Hacking at Hack4u Academy.
 
 > [!NOTE]  
