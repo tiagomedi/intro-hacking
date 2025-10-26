@@ -22,3 +22,7 @@ A continuación, se detallan algunos de los comandos vistos en esta clase:
 En la siguiente clase, veremos cómo aplicar port fowarding y cómo jugar con monturas. El port forwarding nos permitirá redirigir el tráfico de red desde un puerto específico en el host a un puerto específico en el contenedor, lo que nos permitirá acceder a los servicios que se ejecutan dentro del contenedor desde el exterior.
 
 Las monturas, por otro lado, nos permitirán compartir un directorio o archivo entre el sistema host y el contenedor, lo que nos permitirá persistir la información entre ejecuciones de contenedores y compartir datos entre diferentes contenedores.
+
+- Para eliminar todos los contenedores Docker, puedes usar el comando __docker container prune__ para borrar solo los detenidos, o detener y eliminar todos los contenedores con 
+    - __docker stop $(docker ps -a -q)__
+    - __docker rm $(docker ps -a -q)__
